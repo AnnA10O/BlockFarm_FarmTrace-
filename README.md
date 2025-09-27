@@ -1,7 +1,7 @@
 
 
 basic setup to run
-cd frontend
+run this where package.json is kept
 npm install
 npm run dev 
 
