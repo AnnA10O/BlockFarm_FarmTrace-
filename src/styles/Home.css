@@ -1,0 +1,154 @@
+/* Home Page Container */
+.home-container {
+  margin-top: 90px; /* offset for navbar */
+  text-align: center;
+  padding: 0; /* background sections will handle padding */
+  box-sizing: border-box;
+}
+
+/* ==== HEADER SECTION WITH BACKGROUND ==== */
+.header-section {
+  padding: 80px 20px;
+  color: #fff;
+  background: url("your-header-bg-image-path") center/cover no-repeat;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-title-2 {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 0 20px;
+}
+
+/* Individual card button */
+.nav-card {
+  background: #4acce9;
+  border-radius: 16px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px #4acce9;
+}
+
+.nav-card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* ==== INFO SECTION ==== */
+.info-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.info-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: #2a6d9e;
+}
+
+.info-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Info Images */
+.info-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* ==== HOW IT WORKS SECTION WITH TRANSPARENT BACKGROUND ==== */
+.how-section {
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 40px 20px;
+  border-radius: 12px;
+  position: relative;
+  background: url("your-howitworks-bg-image-path") center/cover no-repeat;
+}
+
+.how-overlay {
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent overlay */
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.how-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.step-card {
+  background: #e8f8ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.step-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #006699;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+}

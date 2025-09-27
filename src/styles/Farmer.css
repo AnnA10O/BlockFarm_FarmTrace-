@@ -1,0 +1,78 @@
+.farmer-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/Design/FarmerPage/farm-bg.jpg") center/cover no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.farmer-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.farmer-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.farmer-card h2 {
+  margin-bottom: 10px;
+  color: #2c7a7b;
+}
+
+.farmer-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #2c7a7b;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e5558;
+}
+
+.qr-section {
+  margin-top: 20px;
+}
+
+.qr-section img {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+}

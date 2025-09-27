@@ -1,0 +1,113 @@
+.navBar {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;         
+  box-sizing: border-box; 
+  overflow-x: hidden;   
+  z-index: 1000;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Layout wrapper */
+.navBar-FarmTrace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;        
+  box-sizing: border-box;
+}
+
+.navBar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.Logo {
+  height: 28px;
+  display: block;
+}
+
+.logo-text {
+  user-select: none;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+.navBar-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+/* Button styling */
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  height: 36px;
+  font-size: 14px;
+  border: 2px solid #28a745;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+  background-color: #28a745;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navBar-FarmTrace {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navBar-links {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .button-link {
+    width: auto;
+    min-width: 90px;
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .button-link {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
